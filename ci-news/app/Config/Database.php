@@ -30,28 +30,26 @@ class Database extends Config
 	 *
 	 * @var array
 	 */
-	
-	$db['default'] = array(
-		'dsn'	=> '',
+	public $default = [
+		'DSN'      => '',
 		'hostname' => 'localhost',
-		'username' => 'root',
+		'username' => '',
 		'password' => '',
-		'database' => 'tokobuah',
-		'dbdriver' => 'mysqli',
-		'dbprefix' => '',
-		'pconnect' => FALSE,
-		'db_debug' => (ENVIRONMENT !== 'production'),
-		'cache_on' => FALSE,
-		'cachedir' => '',
-		'char_set' => 'utf8',
-		'dbcollat' => 'utf8_general_ci',
-		'swap_pre' => '',
-		'encrypt' => FALSE,
-		'compress' => FALSE,
-		'stricton' => FALSE,
-		'failover' => array(),
-		'save_queries' => TRUE
-	);
+		'database' => '',
+		'DBDriver' => 'MySQLi',
+		'DBPrefix' => '',
+		'pConnect' => false,
+		'DBDebug'  => (ENVIRONMENT !== 'production'),
+		'charset'  => 'utf8',
+		'DBCollat' => 'utf8_general_ci',
+		'swapPre'  => '',
+		'encrypt'  => false,
+		'compress' => false,
+		'strictOn' => false,
+		'failover' => [],
+		'port'     => 3306,
+	];
+
 	/**
 	 * This database connection is used when
 	 * running PHPUnit database tests.

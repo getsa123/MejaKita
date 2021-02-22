@@ -4,8 +4,6 @@ namespace Config;
 
 use CodeIgniter\Config\AutoloadConfig;
 
-
-
 /**
  * -------------------------------------------------------------------
  * AUTO-LOADER
@@ -45,6 +43,7 @@ class Autoload extends AutoloadConfig
 		APP_NAMESPACE => APPPATH, // For custom app namespace
 		'Config'      => APPPATH . 'Config',
 	];
+
 	/**
 	 * -------------------------------------------------------------------
 	 * Class Map
